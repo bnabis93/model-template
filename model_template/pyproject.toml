@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "model_template"
+version = "0.1.0"
+description = ""
+authors = ["hyeonwoojeong <qhsh9713@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+mlflow = "^1.20.2"
+lightgbm = "^3.3.0"
+matplotlib = "3.4.2"
+scikit-learn = "0.24.2"
+boto3 = "1.17.49"
+fastapi = "0.65.1"
+uvicorn = "0.14.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+train = "src.model_template.training.train:main"
+temp = "temp:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+ 
