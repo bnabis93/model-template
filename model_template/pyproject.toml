@@ -13,6 +13,7 @@ scikit-learn = "0.24.2"
 boto3 = "1.17.49"
 fastapi = "0.65.1"
 uvicorn = "0.14.0"
+dvc = "^2.7.4"
 
 
 [tool.poetry.dev-dependencies]
@@ -20,7 +21,7 @@ pytest = "^5.2"
 
 [tool.poetry.scripts]
 train = "src.model_template.training.train:main"
-temp = "temp:main"
+serve = "src.model_template.serving.main:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

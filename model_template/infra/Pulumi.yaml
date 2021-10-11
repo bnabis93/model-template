@@ -1,0 +1,3 @@
+name: model-template-infra
+runtime: nodejs
+description: Infra for our ML model
