@@ -11,7 +11,7 @@ mlflow.set_tracking_uri('http://ml.aebono.com/mlflow')
 mlflow.lightgbm.autolog()
 
 # Prepare training data
-df = pd.read_csv('data/iris.csv')
+df = pd.read_csv('../../../data/iris.csv')
 flower_names = {'Setosa': 0, 'Versicolor': 1, 'Virginica': 2}
 
 
